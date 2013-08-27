@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="log_writable_file_check">Checking for world writable file</string>
+	<string name="log_writable_file_not_found">World writable file not found</string>
+	<string name="log_writable_file_found">World writable file found</string>
+	<string name="log_writable_file_delete">Deleting world writable file</string>
+	<string name="log_writable_link_try_create">Attempting to creating symlink</string>
+	<string name="app_name">Archos Rooter</string>
+	<string name="button_root">Root It</string>
+	<string name="writable_file">/data/misc/smb/fusesmb.conf</string>
+	<string name="writeable_link">/data/local.prop</string>
+	<string name="temp_root_trickery">ro.kernel.qemu=1</string>
+	<string name="create_link_command">ln -s /data/local.prop /data/misc/smb/fusesmb.conf</string>
+</resources>

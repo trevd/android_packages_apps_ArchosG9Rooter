@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:8
+-keep class com.trevd.archosroot.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class com.trevd.archosroot.temprooter { <init>(...); }
+
+# onClick res/layout/main.xml #generated:7
+-keepclassmembers class * { *** rootButtonClicked(...); }
+
