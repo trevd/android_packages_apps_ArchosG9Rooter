@@ -1,4 +1,4 @@
-a uninstall com.trevd.archosroot
+a uninstall com.trevd.installsde
 rm -rf gen/ bin/
 ant debug
-a ins bin/archosroot-debug.apk
+a ins bin/installsde-debug.apk

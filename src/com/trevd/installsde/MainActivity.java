@@ -1,4 +1,4 @@
-package com.trevd.archosroot;
+package com.trevd.installsde;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-
+import com.trevd.installsde.Root;
 public class MainActivity extends Activity
 {
 
@@ -26,18 +26,14 @@ public class MainActivity extends Activity
 	private final static String ERROR_RESOURCE_FILENAME_NULL = "Resource Output Filename is null";
 	private final static String ERROR_RESOURCE_FILENAME_EMPTY = "Resource Output Filename is empty";
 	
+	
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		if ( extractRawResource(R.raw.exploit,EXPLOIT_FILENAME) == false )
-			return ; 
-			
-		if ( extractRawResource(R.raw.kernel,KERNEL_FILENAME) == false ) 
-			return ;
-		flashSDEKernel();
+		
 		
 		
 	}
@@ -95,6 +91,10 @@ public class MainActivity extends Activity
 	/** Called when the user clicks the Root button */
 	public void rootButtonClicked(View view) {
 		
+		Root.getroot();
+		//if ( extractRawResource(R.raw.kernel,KERNEL_FILENAME) == false ) 
+		//	return ;
+		//flashSDEKernel();
 		return ; 
 
 	}
