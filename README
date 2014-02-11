@@ -1,0 +1,21 @@
+android_packages_apps_InstallSDE
+================================
+
+One Click Archos G9 SDE Firmware Enabler.
+
+This application is intended to be run on an unrooted stock Archos G9.
+
+Details:
+Gains Root via libput_user_exploit - CVE-2013-6282 
+
+
+Credits : 
+fi01 - Original libput_user_exploit 
+https://github.com/fi01/libput_user_exploit
+
+hiikezoe -  Android Run Root Shell
+https://github.com/hiikezoe/android_run_root_shell
+
+
+
+
