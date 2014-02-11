@@ -20,8 +20,6 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
-
-
 # This is the target being built.
 LOCAL_MODULE:= libinstallsde_jni
 
@@ -32,7 +30,7 @@ LOCAL_SRC_FILES:= \
 
 # All of the shared libraries we link against.
 LOCAL_SHARED_LIBRARIES := \
-	libutils liblog
+	libutils liblog libandroid
 
 # No static libraries.
 LOCAL_STATIC_LIBRARIES :=
@@ -41,7 +39,7 @@ LOCAL_STATIC_LIBRARIES :=
 LOCAL_C_INCLUDES += \
 	$(JNI_H_INCLUDE)
 
-# No special compiler flags.
-LOCAL_CFLAGS +=
+# 
+LOCAL_CFLAGS += -Wno-unused-parameter
 
 include $(BUILD_SHARED_LIBRARY)
